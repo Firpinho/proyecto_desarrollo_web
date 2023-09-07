@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+nav ul li a {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+nav ul li ul {
+  display: none;
+}
+
+/*# sourceMappingURL=header.css.map */

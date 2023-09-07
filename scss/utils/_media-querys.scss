@@ -1,0 +1,207 @@
+@media screen and (min-width:600px){
+    nav {
+        ul{
+            .opt-1 {
+                display: flex;
+            }
+
+            .opt-5 {
+                .burger-container{
+                    width: 50%;
+                }
+                ul {
+                    .opt-1-burger {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .contact {
+        iframe {
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (min-width:760px){
+    nav {
+        ul{
+            .opt-2 {
+                display: flex;
+            }
+
+            .opt-5 {
+                .burger-container{
+                    width: 50%;
+                }
+                ul {
+                    .opt-2-burger {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        padding: 60px;
+        justify-content: flex-start;
+        background-image: linear-gradient(to right,rgb(255, 255, 255), rgba(255, 255, 255, 0.151)), url('../img/index.webp');
+        .title {
+            display: flex;
+            align-items: center;
+            .heading {
+               h1 {
+                 font-size: 80px;
+               }
+               h2 {
+                font-size: 35px;
+               }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:850px){
+    nav {
+        ul{
+            .opt-3 {
+                display: flex;
+            }
+
+            .opt-5 {
+                .burger-container{
+                    width: 50%;
+                }
+                ul {
+                    .opt-3-burger {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+
+    .economia-plateada-card-container {
+        flex-direction: row;
+    }
+
+    .economia-plateada-card {
+        button {
+            margin: 0 10px;
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+    }
+    
+
+    .no-img {
+        h3 {
+            padding-bottom: 0px;
+        }
+        button {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+@media screen and (min-width:900px){
+
+    .economia-plateada-card {
+        button {
+            margin: 0 15px;
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .contact {
+        h5 {
+            font-size: 30px;
+        }
+        h6{
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            padding: 25px 0 0 ;
+            display: flex;
+            .map {
+                width: calc(100% / 2);
+                height: 100%;
+                ifame{
+                    height: 100%;
+                }
+            }
+            .info {
+                width: calc(100% / 2);
+                padding: 60px 0;
+                .mail-phone {
+                    padding: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px){
+    nav {
+        ul{
+            .opt-4 {
+                display: flex;
+            }
+
+            .opt-5 {
+                display: none;
+                .burger-container{
+                    width: 50%;
+                }
+                ul {
+                    .opt-4-burger {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        h5 {
+            font-size: 35px;
+        }
+        h6{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            .info {
+                p{
+                    font-size: 20px;
+                }
+                .mail-phone {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .economia-plateada-card {
+        button {
+            margin: 0 38px;
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .no-img {
+        h3 {
+            padding-bottom: 60px;
+        }
+    }
+}
