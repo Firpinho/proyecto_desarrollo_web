@@ -31,6 +31,10 @@
   margin: 0;
 }
 
+p {
+  font-weight: bold;
+}
+
 a {
   color: #1d1d1d;
   text-decoration: none;
@@ -321,12 +325,13 @@ footer img {
 }
 
 .card-container {
-  padding: 30px 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+  gap: 4px;
   width: 100%;
 }
 
@@ -350,8 +355,9 @@ footer img {
   height: 56.4%;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 15px;
   overflow: auto;
 }
@@ -428,12 +434,13 @@ footer img {
 }
 
 .economia-plateada-card-container {
-  padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  gap: 14px;
   width: 95%;
 }
 
