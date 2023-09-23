@@ -1,50 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Campizal | Viendas Tuteladas | Viviendas Asistidas</title>
-    <meta
-      name="description"
-      content="Campizal es la constructra que construye Apartamentos Silver o Viviendas Asistidas, independencia con seguridad y confort. Para seguir disfrutando de la vida"
-    />
-    <meta
-      name="keywords"
-      content="Campizal, Constructora, Apartamentos Silver, independencia con seguridad y confort"
-    />
-    <meta name="robots" content="index, follow" />
-
+    <title>Campizal | 400 Error</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta http-equiv="Cache-control" content="no-cache" />
-    <meta name="author" content="Gaston Firpo" />
-    <meta name="msvalidate.01" content="341A86460E2E76E2CA2F7DD40B802717" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.campizal.com/" />
-    <meta property="og:title" content="Campizal | Constructora" />
-    <meta property="og:description" content="Constructora." />
-    <meta
-      property="og:image"
-      content="https://www.campizal.com/img/logo.webp"
-      type="image/x-icon"
-      title="Logo | Campizal"
-    />
-    <!-- ==================================================================== -->
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.campizal.com/" />
-    <meta property="twitter:title" content="Campizal | Constructora" />
-    <meta property="twitter:description" content="Constructora." />
-    <meta
-      property="twitter:image"
-      content="https://www.campizal.com/img/logo.webp"
-      type="image/x-icon"
-      title="Logo | Campizal"
-    />
-
     <script
       src="../third-party/fontawesome-free-6.4.2-web/js/all.min.js"
       crossorigin="anonymous"
@@ -222,133 +180,19 @@
       </nav>
     </header>
 
-    <div class="img-zoom" id="modal">
-      <span class="close" id="close-modal">&times;</span>
-      <img src="#" alt="" id="modal-img" />
-    </div>
-
-    <div class="container">
-      <h1><span class="economia_plateada_color">Apartamentos Silver</span></h1>
-      <div class="card-container">
-        <div class="card economia-plateada complete-title-card">
-          <img
-            src="../img/apartementos_premium.webp"
-            alt=""
-            id="apartamentos-silver-img"
-          />
-          <div class="card-content">
-            <div class="title">
-              <h2>
-                Una linda
-                <span class="economia_plateada_color">opción</span> para
-                <span class="economia_plateada_color">vivir</span> , o un
-                <span class="economia_plateada_color">negocio rentable</span>
-                que trae <span class="economia-plateada-color">felicidad</span>.
-              </h2>
-              <hr />
-            </div>
-          </div>
+    <main class="error-main-container">
+        <div class="logo">
+            <img src="../img/logo.webp" alt="">
         </div>
-
-        <div class="card list-card">
-          <img
-            src="../img/apartamentos_premium_middle_card.webp"
-            alt=""
-            id="apartamentos-silver-middle-img"
-          />
-          <div class="card-content">
-            <h4>
-              Los apartamentos silver son viviendas autónomas, unipersonales o
-              de pareja, para el alojamiento privado y la convivencia comunal.
-              Están destinadas al alojamiento permanente de personas mayores de
-              60 años, que tengan un adecuado nivel de autonomía personal, tanto
-              física como psíquica, pero que prefieran vivir más acompañados y
-              seguros.
-            </h4>
-            <div class="card-list">
-              <p>
-                <b>1)</b> Se pueden
-                <span class="economia_plateada_color"
-                  >comprar para disfrutar</span
-                >.
-              </p>
-              <p>
-                <b>2)</b> Se pueden comprar para
-                <span class="economia_plateada_color">alquilar</span>, son una
-                <span class="economia_plateada_color">excelente inversión</span
-                >.
-              </p>
-              <p>
-                <b>3)</b> Se pueden también para
-                <span class="economia_plateada_color">vender</span> con un
-                <span class="economia_plateada_color">importante beneficio</span
-                >.
-              </p>
-            </div>
-          </div>
+        <div class="description">
+            <h1>¡400!</h1>
+            <h2>Ha ocurrido un error inesperado al intentar acceder a la pagina</h2>
+            <p>Regresa al Home, y seguro, con mucho gusto, te daremos la atención que mereces.</p>
         </div>
-
-        <div class="card list-card">
-          <img src="../img/60ypico.webp" alt="" id="60ypico-img" />
-          <div class="card-content">
-            <h3>
-              Proyecto <span class="economia_plateada_color">en marcha</span>
-            </h3>
-            <h3>Consulte:</h3>
-            <h3>Para <span class="economia_plateada_color">invertir</span></h3>
-            <h3>Para <span class="economia_plateada_color">vivir</span></h3>
-          </div>
+        <div class="button">
+            <button onclick="window.location.href = 'https://www.campizal.com/'"><p><i class="fa-solid fa-house"></i> home</p></button>
         </div>
-      </div>
-
-      <section class="contact" id="contact-section">
-        <hr />
-        <h5>Contacto</h5>
-        <h6>
-          Todo nuestro equipo
-          <span class="campizal-color">a su disposición</span>.
-        </h6>
-        <div class="contact-info">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.772216242976!2d-56.1150051!3d-34.887065799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81ed5edcafa9%3A0x7f45d1d1c66535d3!2sCampizal%20Construcciones!5e0!3m2!1sen!2suy!4v1692205876221!5m2!1sen!2suy"
-              style="border: 1"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="info">
-            <p>
-              Sin costo para usted, tenemos respuestas que lo ayudarán a tomar
-              las decisiones correctas.
-            </p>
-            <div class="mail-phone">
-              <p>
-                <a href="tel:+598095411004"
-                  ><i class="fa-solid fa-phone"></i
-                ></a>
-                <a href="https://wa.me/091928761"
-                  ><i class="fa-brands fa-whatsapp"></i> <b>091 928 761</b></a
-                >
-              </p>
-              <p>
-                <a href="tel:+598095411004"
-                  ><i class="fa-solid fa-phone"></i>
-                  <b>095 411 004</b> (Daniel)</a
-                >
-              </p>
-              <p>
-                <a href="mailto:info@campizal.com"
-                  ><i class="fa-solid fa-envelope"></i
-                  ><b>info@campizal.com</b></a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </main>
 
     <footer>
       <div class="logo">
@@ -369,7 +213,7 @@
       </div>
       <div class="info">
         Para construir, como inversión, para vivienda,todos los sistemas
-        constructivos con la mejor calidad, una excelente inversión asegurando
+        construcctivos con la mejor calidad, una excelente inversión asegurando
         el futuro.
       </div>
       <div class="media">

@@ -37,7 +37,7 @@
 }
 
 p {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 a {
@@ -79,6 +79,43 @@ button {
     background-color: $economia_plateada_color;
     border-color: $economia_plateada_color;
 }
+
+
+.img-zoom {
+    @include center(row);
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.900);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border-radius: 10%;
+        padding: 10px;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+        border-radius: 6px;
+        object-fit: contain;
+    }
+    .close {
+        color: ghostwhite;
+        font-size: 50px;
+        font-weight: bold;
+        position: absolute;
+        top: 5px;
+        right: 25px;
+        cursor: pointer;
+    }
+}
+
 
 hr {
     border-style: none;

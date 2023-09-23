@@ -32,7 +32,7 @@
 }
 
 p {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a {
@@ -75,6 +75,45 @@ button {
   border-color: #8b51f5;
 }
 
+.img-zoom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 56, 56, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.img-zoom button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 10%;
+  padding: 10px;
+}
+.img-zoom img {
+  width: 90%;
+  height: 90%;
+  border-radius: 6px;
+  object-fit: contain;
+}
+.img-zoom .close {
+  color: ghostwhite;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  cursor: pointer;
+}
+
 hr {
   border-style: none;
 }
@@ -88,24 +127,34 @@ header {
 nav {
   font-weight: bold;
   display: flex;
-  max-height: 60px;
+  max-height: 70px;
   justify-content: space-between;
 }
 nav li {
-  padding: 20px 0;
-  border-radius: 5px;
+  padding: 16px;
+  border-radius: 15px;
 }
 nav li:hover {
   background-color: #f7f7f7;
 }
+nav li a {
+  display: block;
+  padding: 10px;
+}
+nav li span {
+  display: block;
+  padding: 10px;
+}
 nav .img {
   height: 50px;
+  align-self: center;
 }
 nav .img img {
-  padding: 5px 10px;
+  padding: 0 auto;
+  margin-left: 10px;
 }
 nav ul {
-  padding: 0 30px;
+  padding: 0 20px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -116,15 +165,22 @@ nav ul {
 nav ul .opt-1, nav ul .opt-2, nav ul .opt-3, nav ul .opt-4 {
   display: none;
 }
+nav ul .opt-3, nav ul .opt-4 {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 nav ul .opt-3 ul, nav ul .opt-4 ul {
   height: 0;
   width: 40%;
   overflow: hidden;
   position: absolute;
-  top: 51px;
-  right: 30px;
+  top: 54px;
+  right: 20px;
   display: block;
   background-color: white;
+}
+nav ul .opt-3 ul li, nav ul .opt-4 ul li {
+  padding: 5px !important;
 }
 nav ul .opt-3:hover ul, nav ul .opt-4:hover ul {
   height: auto;
@@ -132,21 +188,28 @@ nav ul .opt-3:hover ul, nav ul .opt-4:hover ul {
   background-color: #f7f7f7;
 }
 nav ul .opt-3:hover ul li, nav ul .opt-4:hover ul li {
+  display: inline-block;
+  padding: 0 !important;
   width: 100%;
 }
 nav ul .opt-3:hover ul li:hover, nav ul .opt-4:hover ul li:hover {
   background-color: #cecece;
 }
+nav ul .opt-3:hover ul li a, nav ul .opt-4:hover ul li a {
+  padding: 20px;
+}
 nav ul .opt-3 ul {
   right: 30px;
 }
 nav ul .opt-5 {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   width: 100%;
 }
 nav ul .opt-5 .burger-container {
   position: absolute;
   right: 0;
-  top: 55px;
+  top: 50px;
   width: 100%;
 }
 nav ul .opt-5 ul {
@@ -156,6 +219,7 @@ nav ul .opt-5 ul {
 nav ul .opt-5 ul li {
   height: 25%;
   width: 100%;
+  padding: 5px;
 }
 nav ul .opt-5 ul li ul {
   background-color: #f7f7f7;
@@ -177,7 +241,9 @@ nav ul li {
   width: auto;
   align-items: center;
   text-align: center;
-  padding: 20px 10px;
+}
+nav ul li .options {
+  margin: 20px 0;
 }
 nav ul li p {
   display: flex;
@@ -205,8 +271,10 @@ footer .logo {
 footer .media {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 footer .media a {
+  width: 20%;
   text-decoration: none;
   color: ghostwhite;
 }
@@ -218,14 +286,16 @@ footer img {
 }
 
 .main {
-  padding-top: 70px;
+  height: 80%;
   display: flex;
   justify-content: space-around;
   background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0.151)), url("../img/index.webp");
   background-size: cover;
   background-position: center center;
-  height: 80vh;
   align-items: center;
+}
+.main .index-main-content {
+  padding-top: 70px;
 }
 .main .title {
   text-align: center;
@@ -239,6 +309,9 @@ footer img {
 .main h3 {
   padding-top: 15%;
   color: #104095;
+}
+.main a {
+  font-size: large;
 }
 .main .buttons-container {
   padding: 30px 0;
@@ -265,7 +338,6 @@ footer img {
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
   text-align: center;
 }
 .contact h5 {
@@ -281,7 +353,7 @@ footer img {
   background-color: #104095;
   background-color: #104095;
   align-self: center;
-  margin-bottom: 35px;
+  margin-bottom: 5px;
 }
 .contact iframe {
   margin: 20px 0;
@@ -293,7 +365,10 @@ footer img {
   border-radius: 10px;
 }
 .contact .info p {
-  text-align: center;
+  display: flex;
+  gap: 1rem;
+  align-self: center;
+  text-align: start;
   padding: 0 15px;
   font-size: 15px;
 }
@@ -330,14 +405,14 @@ footer img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px 0;
+  padding: 10px 0;
   gap: 4px;
   width: 100%;
 }
 
 .card {
   width: 95%;
-  height: 750px;
+  height: 650px;
   background-color: ghostwhite;
   text-align: center;
   border-radius: 2px;
@@ -352,16 +427,23 @@ footer img {
   border-radius: 1px 1px 0 0;
 }
 .card .card-content {
-  height: 56.4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 350px;
   gap: 15px;
   overflow: auto;
 }
 .card button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 15px 90px;
   margin: 0 75px;
 }
 
@@ -385,24 +467,26 @@ footer img {
 }
 
 .list-card .card-content h3 {
-  margin-bottom: 40px;
   font-size: 30px;
 }
 .list-card .card-content h4 {
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 .list-card .card-content .card-list {
   display: flex;
   flex-direction: column;
-  max-height: 56.4%;
-  gap: 10px;
-  text-align: start;
-  margin: 0 auto;
-  width: 70%;
+  max-height: 100%;
+  gap: 20px;
+  width: 80%;
+  text-align: start !important;
+}
+.list-card .card-content .card-list h3 {
+  padding-top: 10px;
+  text-align: center;
 }
 
 .img-card img {
-  height: 320px;
+  height: 270px;
 }
 .img-card p {
   padding-bottom: 15px;
@@ -445,7 +529,7 @@ footer img {
 }
 
 .economia-plateada-card {
-  width: 80%;
+  width: 90%;
   height: 750px;
   display: flex;
   flex-direction: column;
@@ -556,14 +640,20 @@ footer img {
     margin-top: auto;
     margin-bottom: 20px;
   }
+  .ady-content p {
+    font-size: 30px;
+  }
+  .contact {
+    margin-bottom: -50px;
+  }
   .contact h5 {
     font-size: 30px;
   }
   .contact h6 {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
   .contact .contact-info {
-    padding: 25px 0 0;
+    padding: 5px 0 0;
     display: flex;
   }
   .contact .contact-info .map {
@@ -599,7 +689,7 @@ footer img {
   }
   .contact h6 {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
   .contact .contact-info .info p {
     font-size: 20px;

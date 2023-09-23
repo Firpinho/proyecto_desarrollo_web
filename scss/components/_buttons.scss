@@ -1,0 +1,16 @@
+button {
+    color: ghostwhite;
+    font-size: medium;
+    font-weight: bold;
+    border-style: solid;
+    background: $campizal_color;
+    border-color: $campizal_color;
+    border-radius: 50px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.economia-plateada-button {
+    background-color: $economia_plateada_color;
+    border-color: $economia_plateada_color;
+}

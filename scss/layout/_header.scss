@@ -7,23 +7,36 @@ header {
 nav {
     font-weight: bold;
     display: flex;
-    max-height: 60px;
+    max-height: 70px;
     justify-content: space-between;
     li{
-        padding: 20px 0;
+        padding: 16px;
+        border-radius: 15px;
         &:hover {
             background-color: $hover_color;
         }
-        border-radius: 5px;
+
+        a {
+            display: block;
+            padding: 10px;
+
+        }
+
+        span {
+            display: block;
+            padding: 10px;
+        }
     }
     .img{
         height: 50px;
+        align-self: center;
         img {
-            padding: 5px 10px;
+            padding: 0 auto;
+            margin-left: 10px;
         }
     }
     ul {
-        padding: 0 30px;
+        padding: 0 20px;
         list-style: none;
         display: flex;
         justify-content: center;
@@ -36,15 +49,20 @@ nav {
         }
 
         .opt-3, .opt-4 {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             ul {
                 height: 0;
                 width: 40%;
                 overflow: hidden;
                 position: absolute;
-                top: 51px;
-                right: 30px;
+                top: 54px;
+                right: 20px;
                 display: block;
                 background-color: white;
+                li {
+                    padding: 5px !important; 
+                }
             }
 
             &:hover{
@@ -53,9 +71,14 @@ nav {
                     border-radius: 5px;
                     background-color: $hover_color;
                     li {
+                        display: inline-block;
+                        padding: 0 !important; 
                         width: 100%;
                         &:hover {
                             background-color: #cecece;
+                        }
+                        a{
+                            padding: 20px;
                         }
                     }
                 }
@@ -69,11 +92,13 @@ nav {
         }
 
         .opt-5 {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             width: 100%;
             .burger-container{
                 position: absolute;
                 right: 0;
-                top: 55px;
+                top: 50px;
                 width: 100%;
             }
 
@@ -83,6 +108,7 @@ nav {
                 li {
                     height: calc(100% / 4);
                     width: 100%;
+                    padding: 5px;
                     ul {
                         background-color: $hover_color;
                         height: 0;
@@ -115,7 +141,9 @@ nav {
             width: auto;
             align-items: center;
             text-align: center;
-            padding: 20px 10px;
+            .options {
+                margin: 20px 0;
+            }
             p {
                 display: flex;
                 flex-direction: column;
@@ -123,6 +151,7 @@ nav {
                 justify-content: center;
                 height: 100%;
             }
+
         }
     }
 }

@@ -17,7 +17,9 @@ footer {
     .media {
         display: flex;
         flex-direction: column;
+        gap: 5px;
         a{
+            width: 20%;
             text-decoration: none;
             color: ghostwhite;
         }
